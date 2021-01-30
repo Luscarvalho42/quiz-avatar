@@ -1,0 +1,14 @@
+{
+  "bg": "https://www.imagemhost.com.br/images/2021/01/30/dad1w2p-ff091f0c-79ae-40ab-b87c-a66366cb34d8.png",
+  "theme": {
+    "colors": {
+      "primary": "#ffa733",
+      "secondary": "#00bcd4",
+      "mainBg": "black",
+      "contrastText": "white",
+      "wrong": "red",
+      "success": "green"
+    },
+    "borderRadius": "0px"
+  }
+}
