@@ -52,7 +52,7 @@ Widget.Topic = styled.a`
   outline: 0;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.contrastText};
-  background-color: ${({ theme }) => `${theme.colors.primary}aa`};
+  background-color: ${({ theme }) => `${theme.colors.primary}33`};
   padding: 10px 15px;
   margin-bottom: 8px;
   cursor: pointer;
@@ -64,6 +64,13 @@ Widget.Topic = styled.a`
   &:focus {
     opacity: .5;
   }
-`
+`;
+
+Widget.Image = styled.img`
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  position: center;
+`;
 
 export default Widget;

@@ -1,26 +1,59 @@
 {
   "questions": [
     {
-      "image": "https://media.giphy.com/media/10fS0TJxfFRDLW/giphy.gif",
-      "title": "wefwefwefw",
-      "description": "Cillum proident tempor laboris sit fugiat Lorem tempor reprehenderit eiusmod nulla irure culpa.",
-      "answer": 2,
+      "image": "https://i.gifer.com/PkbQ.gif",
+      "title": "Ordem do ciclo",
+      "description": "Qual a ordem dos elementos de cada nação dentro do ciclo Avatar?",
+      "answer": 0,
       "alternatives": [
-        "1",
-        "2",
-        "3",
-        "4"
+        "Fogo, ar, água, terra",
+        "Ar, terra, água, fogo",
+        "Água, metal, fogo, terra",
+        "Água, terra, fogo, ar"
       ]
     },{
-      "image": "https://media.giphy.com/media/10fS0TJxfFRDLW/giphy.gif",
-      "title": "Esse dolor qui sit deserunt.",
-      "description": "Cillum proident tempor laboris sit fugiat Lorem tempor reprehenderit eiusmod nulla irure culpa.",
-      "answer": 2,
+      "image": "https://media.giphy.com/media/mFYtQQ88btIZ9oraH4/giphy.gif",
+      "title": "O primeiro Avatar",
+      "description": "Qual o nome do primeiro Avatar?",
+      "answer": 1,
       "alternatives": [
-        "1",
-        "2",
-        "3",
-        "4"
+        "Aang",
+        "Wan",
+        "Raava",
+        "Kyoshi"
+      ]
+    },{
+      "image": "https://media.giphy.com/media/LR0tILqlTWXorR8tEt/giphy.gif",
+      "title": "Vilões ideológicos",
+      "description": "Qual alternativa NÃO representa uma ideologia política dos vilões de a lenda de Korra?",
+      "answer": 3,
+      "alternatives": [
+        "Anarquia",
+        "Fascismo",
+        "Teocracia",
+        "Capitalismo"
+      ]
+    },{
+      "image": "https://media.giphy.com/media/wM2jsoKbVTur6/giphy.gif",
+      "title": "O oásis espiritual",
+      "description": "Qual o nome dos espirítios que representam a Lua e o Oceano?",
+      "answer": 0,
+      "alternatives": [
+        "Tui e La",
+        "Vaatu e Raava",
+        "Yin e Yang",
+        "Aang e Korra"
+      ]
+    },{
+      "image": "https://media.giphy.com/media/uTpY9ARfN2eqs/giphy.gif",
+      "title": "Tio Iroh",
+      "description": "Qual o nome do filho de Iroh?",
+      "answer": 0,
+      "alternatives": [
+        "Lu Ten",
+        "Zuko",
+        "Aang",
+        "Ozai"
       ]
     }
   ],
