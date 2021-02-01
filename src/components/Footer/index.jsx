@@ -7,6 +7,9 @@ const FooterWrapper = styled.footer`
   display: flex;
   align-items: center;
   border-radius: 4px; 
+  opacity: 0;
+  animation: aparecer 1s ease-in-out forwards;
+
   img {
     width: 58px;
     margin-right: 23px;
@@ -21,6 +24,16 @@ const FooterWrapper = styled.footer`
     }
     span {
       text-decoration: underline;
+    }
+  }
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 `;

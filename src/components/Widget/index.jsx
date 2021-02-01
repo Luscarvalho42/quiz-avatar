@@ -7,6 +7,8 @@ const Widget = styled.div`
   background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: ${({ theme }) => theme.borderRadius};
   overflow: hidden;
+  opacity: 0;
+  animation: aparecer 1s ease-in-out forwards;
 
   h1,
   h2,
@@ -22,6 +24,17 @@ const Widget = styled.div`
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+  }
+
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 `;
 Widget.Header = styled.header`
@@ -42,7 +55,8 @@ Widget.Content = styled.div`
     margin-bottom: 0;
   }
 
-  ul {
+  ul,
+  li {
     list-style: none;
     padding: 0;
   }

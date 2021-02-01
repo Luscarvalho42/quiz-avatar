@@ -2,13 +2,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import Button from '../src/components/Button';
-import AlternativesForm from '../src/components/AlternativesForm';
+import Widget from '../../components/Widget';
+import QuizLogo from '../../components/QuizLogo';
+import QuizBackground from '../../components/QuizBackground';
+import QuizContainer from '../../components/QuizContainer';
+import Button from '../../components/Button';
+import AlternativesForm from '../../components/AlternativesForm';
+import BackLinkArrow from '../../components/BackLinkArrow';
+import Link from '../../components/Link';
 
 function LoadingWidget() {
   return (
@@ -28,11 +29,17 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>Você finalizou o quiz!</h3>
       </Widget.Header>
 
       <Widget.Content>
         <p>{`Você acertou ${results}!`}</p>
+        <Link href="/">
+          <h3>
+            {'< Voltar'}
+          </h3>
+        </Link>
       </Widget.Content>
     </Widget>
   );
@@ -55,6 +62,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
@@ -130,7 +138,7 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-export default function QuizPage() {
+export default function QuizScreen({ db }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const totalQuestions = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
@@ -177,6 +185,10 @@ export default function QuizPage() {
     </QuizBackground>
   );
 }
+
+QuizScreen.propTypes = {
+  db: PropTypes.objectOf.isRequired,
+};
 
 QuestionWidget.propTypes = {
   question: PropTypes.objectOf.isRequired,

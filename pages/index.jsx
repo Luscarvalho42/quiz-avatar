@@ -12,6 +12,7 @@ import Footer from '../src/components/Footer';
 import QuizBackground from '../src/components/QuizBackground';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
+import Link from '../src/components/Link';
 
 export default function Home() {
   const router = useRouter();
@@ -52,11 +53,27 @@ export default function Home() {
           <Widget.Header>
             <h1>Quizes da Galera</h1>
           </Widget.Header>
-          <Widget.Content />
+          <Widget.Content>
+            {db.external.map((link) => {
+              const texto = link.replace('https://', '')
+                .replace('.vercel.app/', '')
+                .replace('.', ' ');
+              return (
+                <li key={texto}>
+                  <Widget.Topic
+                    as={Link}
+                    href={`/quiz/${texto}`}
+                  >
+                    {texto}
+                  </Widget.Topic>
+                </li>
+              );
+            })}
+          </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner />
+      <GitHubCorner projectUrl="https://github.com/Luscarvalho42/quiz-avatar" />
     </QuizBackground>
   );
 }

@@ -36,8 +36,23 @@ Logo.propTypes = {
 const QuizLogo = styled(Logo)`
   margin: auto;
   display: block;
+  opacity: 0;
+  animation: aparecer 1s ease-in-out forwards;
   @media screen and (max-width: 500px) {
     margin: 0;
+  } 
+  
+
+
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 `;
 
