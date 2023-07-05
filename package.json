@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "18.x"
+  }
   "name": "with-styled-components",
   "version": "1.0.0",
   "scripts": {
